@@ -86,6 +86,11 @@
             align-items: center;
         }
 
+        .Subtitle {
+            display: flex;
+            color: blue;
+        }
+
         /* Section head-A et head-B */
 
             .head-A {
@@ -108,7 +113,7 @@
                 align-items: center;
             }
 
-        /* Section debut-one */
+        /* Section debut-one ( Home ) */
 
             .illustration {
                 display: flex;
@@ -125,7 +130,24 @@
                 padding-left: 100px;
             }
 
-        /* Postal section debut ( Event ) */
+        /* Section fin */   
+
+            #Grid {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            #Groupe {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            iframe {
+                width: 300px;
+                height: 300px;
+            }
+
+        /* Section debut-two ( Event ) */
 
             .postal {
                 display: block;
