@@ -5,7 +5,6 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
-            text-align: justify;
             padding: 30px;
         }
 
@@ -76,26 +75,54 @@
             border: 1px solid;
         }
 
-        .head, .debut, .fin {
+        .head-A, .head-B, .debut-one, .debut-two, .fin {
             border: 1px solid;
         }
 
-        /* Image section head */
+        .Title {
+            color:blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            .img {
-                display: block;
-                margin: auto;
-                width: 100px;
-                height: 50px;
+        /* Section head-A et head-B */
+
+            .head-A {
+                background-image: url(./Image/boxe.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
-        /* Illustration section debut ( Home ) */
+            .head-B {
+                background-image: url(./Image/Ring.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        /* Section debut-one */
 
             .illustration {
-                display: block;
-                margin: auto;
+                display: flex;
+                float: right;
                 width: 100px;
-                height: 50px;
+                height: 100px;
+                padding: 40px;
+            }
+
+            #Texte {
+                display: flex;
+                text-align: justify;
+                padding-right: 600px;
+                padding-left: 100px;
             }
 
         /* Postal section debut ( Event ) */
