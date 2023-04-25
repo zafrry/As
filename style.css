@@ -1,17 +1,117 @@
 /* Organisation de la page */
 
-/* Header */
+    /* Body */
 
-.Logo {
-    width: 250px; 
-    height: 70px;
-    display: block;
-    margin: auto;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-align: justify;
+            padding: 30px;
+        }
 
-/* Nav */
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
+    /* Header */
 
+        header {
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        .Logo {
+            width: 250px; 
+            height: 70px;
+            display: block;
+            margin: auto;
+        } 
+
+    /* Nav */
+
+        .navbar {
+            height: 70px;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .nav-logo {
+            height: 70px;
+            width: 5%;
+        }
+
+        .navbar-ul {
+            display :flex;
+            list-style: none;
+            justify-content: space-between;
+            width: 50%;
+            margin-right: 340px;
+        }
+
+        .Avenir:hover {
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+
+        .Accueil:hover {
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+
+        .Evenement:hover {
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+
+    /* Main */
+
+        main {
+            border: 1px solid;
+        }
+
+        .head, .debut, .fin {
+            border: 1px solid;
+        }
+
+        /* Image section head */
+
+            .img {
+                display: block;
+                margin: auto;
+                width: 100px;
+                height: 50px;
+            }
+
+        /* Illustration section debut ( Home ) */
+
+            .illustration {
+                display: block;
+                margin: auto;
+                width: 100px;
+                height: 50px;
+            }
+
+        /* Postal section debut ( Event ) */
+
+            .postal {
+                display: block;
+                margin: auto;
+                width: 100px;
+                height: 50px;
+            }
+
+    /* Footer */
+
+        footer {
+            border: 1px solid;
+        }
 
 
 
