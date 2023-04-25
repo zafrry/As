@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Découvrez la première association sportive de la ville d'Etampes à se spécialiser dans la boxe thaï">
-    <link rel="shortcut icon" href="./Image/Logo.png" type="image/x-icon"/>
-    <title>Boxe Thaï</title>
-</head>
+ <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Découvrez la première association sportive de la ville d'Etampes à se spécialiser dans la boxe thaï">
+      <link rel="shortcut icon" href="./Image/Logo.png" type="image/x-icon"/>
+      <title>Boxe Thaï</title>
+ </head>
 
-<body>
+    <body>
 
-  <header>
-      <img class="header-img" src="./Image/Title.png" alt="Titre et Slogan de la marque">
-  </header>
+        <header>
 
-  <nav>
-    <img class="nav-img" src="./Image/header-logo.png" alt="Logo de la marque">
-    <ul>
-         <li><a href="Home.html">Accueil</a></li>
-         <li><a href="Event.html">Evenement</a></li>
-         <li>A venir</li>
-    </ul>
-  </nav>
+          <img src="./Image/Title.png" alt="Titre et Slogan de la marque">
+
+        </header>
+
+        <nav>
+
+         <img class="nav-logo" src="./Image/header-logo.png" alt="Logo de la marque">
+
+            <ul>
+              <li><a href="Home.html">Accueil</a></li>
+              <li><a href="Event.html">Evenement</a></li>
+              <li>A venir</li>
+            </ul>
+
+        </nav>
    
 
-    <main>
+        <main>
 
+            <section class="head">
 
-    </main>
+                <h1 class="Title">Nos évenements</h1>
+                <img class="img" src="./Image/Ring.jpg" alt="Ring">
 
-    <footer>
+            </section>
+
+            <section class="debut">
+
+                <h2 class="Title">A venir</h2>
+
+                <div id="post">
+
+                    <h3 class="Title">Entraînement Spécial pour les 6/11 ans</h3>
+                    <img class="postal" src="./Image/Child-training.jpg" alt="Entraînement pour enfant">
+
+                    <h3 class="Title">Championnat Masculin</h3>
+                    <img class="postal" src="./Image/Men-Boxe.jpg" alt="Combat titre de champion">
+
+                    <h3 class="Title">Championnat Féminin</h3>
+                    <img class="postal" src="./Image/Women-boxe.jpg" alt="Combat titre de champion féminin">
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
 
             <img class="footer-logo" src="./Image/header-logo.png" alt="Logo de la marque">
-            <h3>Contactez-nous via le formulaire !</h3>
-    
-            <form method="post" action="">
-    
-                <label for="Name">Nom de Famille
-                <input type="text" name="Name" id="Name" placeholder="DUCHAMPS" required>
-                </label>
-    
-                <label for="Surname">Prénom
-                <input type="text" name="Surname" id="Surname" placeholder="Jean" required>
-                </label>
-    
-                <label for="Message">Message
-                <textarea 
-                name="Message"
-                cols="20"
-                rows="5"
-                id="Message"
-                placeholder="Comment je fais pour m'inscrire ?"
-                required>
-                </textarea>
-                </label>
-    
-                <button type="submit">Envoyer</button>
-    
+            <h3 class="Title">Contactez-nous via le formulaire !</h3>
+
+            <form class="form" method="post" action="">
+
+                <div id="champ">  
+
+                   <label for="Name">Nom de Famille
+                   <input type="text" name="Name" id="Name" placeholder="DUCHAMPS" required>
+                   </label>
+
+                   <label for="Surname">Prénom
+                   <input type="text" name="Surname" id="Surname" placeholder="Jean" required>
+                   </label>
+
+                   <label for="Message">Message
+                   <textarea 
+                   name="Message"
+                   cols="20"
+                   rows="5"
+                   id="Message"
+                   placeholder="Comment je fais pour m'inscrire ?"
+                   required>
+                   </textarea>
+                   </label>
+
+                </div>
+
+                <button class="button" type="submit">Envoyer</button>
+
             </form>
 
-    </footer>
+      </footer>
 
-</body>
+    </body>
 
 </html>
