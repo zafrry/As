@@ -89,6 +89,8 @@
         .Subtitle {
             display: flex;
             color: blue;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Section head-A et head-B */
@@ -135,6 +137,10 @@
             #Grid {
                 display: grid;
                 grid-template-columns: 50% 50%;
+                align-items: center;
+                padding: 10px;
+                padding-bottom: 10px;
+                justify-items: center;
             }
 
             #Carte {
@@ -147,6 +153,9 @@
             iframe {
                 width: 300px;
                 height: 300px;
+                justify-content: center;
+                align-items: center;
+                justify-items:center;
             }
 
         /* Section debut-two ( Event ) */
