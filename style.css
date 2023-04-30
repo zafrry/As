@@ -42,34 +42,30 @@
             width: 50px;
         }
 
-        .accueil {
-            grid-column-start: 2;
-        }
-
-        .evenement {
-            grid-column-start: 3;
-        }
-
-        .avenir {
-            grid-column-start: 4;
-        }
-
         .avenir:hover {
-            background-color: black;
+            background-color: #B7A263;
             color: aliceblue;
-            padding: 20px;
         }
 
         .accueil:hover {
-            background-color: black;
+            background-color: #B7A263;
             color: aliceblue;
-            padding: 20px;
+            cursor: pointer;
         }
 
         .evenement:hover {
-            background-color: black;
+            background-color: #B7A263;
             color: aliceblue;
-            padding: 20px;
+            cursor: pointer;
+        }
+
+        .accueil, .evenement, .avenir {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
         }
 
     /* Main */
@@ -83,7 +79,7 @@
         }
 
         .Title {
-            color:blueviolet;
+            color:#000000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,7 +87,7 @@
 
         .Subtitle {
             display: flex;
-            color: blue;
+            color: #000000
             justify-content: center;
             align-items: center;
         }
@@ -168,6 +164,10 @@
                 border: black 1px solid;
             }
 
+            .child, .men, .women {
+                color: rgb(255, 255, 255);
+            }
+
             #post {
                 display: grid;
                 grid-template-columns: 30% 30% 30%;
@@ -180,7 +180,7 @@
             }
 
             .card {
-                background-color: bisque;
+                background-color: #000;
                 border-radius: 10px;
                 height: 300px;
                 padding: 8px;
@@ -189,11 +189,9 @@
             }
 
             .card:hover {
-                background-color: antiquewhite;
+                background-color: #B7A263;
                 padding: 10px;
             }
-
-
 
     /* Footer */
 
@@ -234,7 +232,7 @@
           }
 
           button {
-            background-color: #04AA6D;
+            background-color: #000;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -243,7 +241,7 @@
           }
 
           button:hover {
-            background-color: #45a049;
+            background-color: #B7A263;
           }
           
 
