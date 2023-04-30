@@ -161,12 +161,39 @@
 
         /* Section debut-two ( Event ) */
 
-            .postal {
-                display: block;
-                margin: auto;
-                width: 100px;
-                height: 50px;
+            .child-img, .men-img, .women-img {
+                width: 240px;
+                height: 200px;
+                border-radius: 5px;
+                border: black 1px solid;
             }
+
+            #post {
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                align-items: center;
+                justify-items: center;
+                text-align: center;
+                padding: 10px;
+                justify-content: center;
+                grid-gap: 4%;
+            }
+
+            .card {
+                background-color: bisque;
+                border-radius: 10px;
+                height: 300px;
+                padding: 8px;
+                display: grid;
+                align-content: center;
+            }
+
+            .card:hover {
+                background-color: antiquewhite;
+                padding: 10px;
+            }
+
+
 
     /* Footer */
 
