@@ -117,20 +117,23 @@
 
         /* Section debut-one ( Home ) */
 
-            .illustration {
-                display: flex;
-                float: right;
-                width: 100px;
-                height: 100px;
-                padding: 40px;
+            #Grille {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: center;
+                padding: 10px;
+                padding-bottom: 10px;
+                justify-items: center;
+                align-items: center;
             }
 
-            #Texte {
-                display: flex;
-                text-align: justify;
-                padding-right: 600px;
-                padding-left: 100px;
+            .illustration {
+                height: 200px;
+                width: 250px;
             }
+
+            
+
 
         /* Section fin */   
 
