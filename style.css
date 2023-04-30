@@ -10,7 +10,6 @@
 
         a {
             text-decoration: none;
-            color: black;
         }
 
     /* Header */
@@ -30,40 +29,44 @@
     /* Nav */
 
         .navbar {
-            height: 70px;
-            border: 1px solid;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            justify-content: center;
             align-items: center;
-            text-align: center;
+            justify-items: center;
+            border: 1px solid;
         }
 
         .nav-logo {
-            height: 70px;
-            width: 5%;
+            height: 50px;
+            width: 50px;
         }
 
-        .navbar-ul {
-            display :flex;
-            list-style: none;
-            justify-content: space-between;
-            width: 50%;
-            margin-right: 340px;
+        .accueil {
+            grid-column-start: 2;
         }
 
-        .Avenir:hover {
+        .evenement {
+            grid-column-start: 3;
+        }
+
+        .avenir {
+            grid-column-start: 4;
+        }
+
+        .avenir:hover {
             background-color: black;
             color: aliceblue;
             padding: 20px;
         }
 
-        .Accueil:hover {
+        .accueil:hover {
             background-color: black;
             color: aliceblue;
             padding: 20px;
         }
 
-        .Evenement:hover {
+        .evenement:hover {
             background-color: black;
             color: aliceblue;
             padding: 20px;
@@ -132,8 +135,6 @@
                 width: 250px;
             }
 
-            
-
 
         /* Section fin */   
 
@@ -148,9 +149,6 @@
 
             #Carte {
                 grid-column-start: 2;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 1;
             }
 
             iframe {
@@ -174,6 +172,19 @@
 
         footer {
             border: 1px solid;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: ;
+            grid-template-areas: ;
+        }
+
+        .footer-logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        #champ {
+
         }
 
 
