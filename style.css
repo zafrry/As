@@ -5,25 +5,16 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
-            padding-top: 50px;
+            padding-top: 60px;
             width: 100%;
             left: 0;
             right: 0;
+            margin: 0;
         }
 
         a {
             text-decoration: none;
         }
-
-    /* Header */
-
-
-        .Logo {
-            width: 250px; 
-            height: 70px;
-            display: block;
-            margin: auto;
-        } 
 
     /* Nav */
 
@@ -41,25 +32,25 @@
             box-shadow: 0px 0px 10px black;
         }
 
+        .navbar a {
+            color: #000;
+        }
+
         .nav-logo {
             height: 50px;
-            width: 50px;
         }
 
         .avenir:hover {
             background-color: #B7A263;
-            color: aliceblue;
         }
 
         .accueil:hover {
             background-color: #B7A263;
-            color: aliceblue;
             cursor: pointer;
         }
 
         .evenement:hover {
             background-color: #B7A263;
-            color: aliceblue;
             cursor: pointer;
         }
 
@@ -70,17 +61,14 @@
             background-color: rgb(255, 255, 255);
             justify-content: center;
             align-items: center;
+            padding: 5px;
         }
 
     /* Main */
 
-        main {
-            border: 1px solid;
-        }
-
-        .head-A, .head-B, .debut-one, .debut-two, .fin {
-            border: 1px solid;
-        }
+    .debut-one {
+        border: 1px solid;
+    }
 
         .Title {
             color:#000000;
@@ -96,28 +84,6 @@
             align-items: center;
         }
 
-        /* Section head-A et head-B */
-
-            .head-A {
-                background-image: url(./Image/boxe.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 500px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .head-B {
-                background-image: url(./Image/Ring.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 500px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
         /* Section debut-one ( Home ) */
 
             #Grille {
@@ -127,12 +93,18 @@
                 padding: 10px;
                 padding-bottom: 10px;
                 justify-items: center;
-                align-items: center;
+                width: 75%;
             }
 
             .illustration {
-                height: 200px;
+                height: 275px;
                 width: 250px;
+            }
+
+            #Texte {
+                text-align: justify;
+                padding: 1px;
+                width: 50%;
             }
 
 
@@ -145,6 +117,7 @@
                 padding: 10px;
                 padding-bottom: 10px;
                 justify-items: center;
+                width: 75%;
             }
 
             #Carte {
