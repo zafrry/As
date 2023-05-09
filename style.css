@@ -66,10 +66,6 @@
 
     /* Main */
 
-    .debut-one {
-        border: 1px solid;
-    }
-
         .Title {
             color:#000000;
             display: flex;
@@ -87,6 +83,10 @@
         }
 
         /* Section debut-one ( Home ) */
+
+            .debut-one {
+                padding-bottom: 10px;
+            }
 
             #Grille {
                 display: grid;
@@ -111,7 +111,12 @@
             }
 
 
-        /* Section fin */   
+        /* Section fin */  
+        
+            .fin {
+                border-top:#B7A263 1px solid;
+                box-shadow: #B7A263 10px 10px 10px 10px;
+            }
 
             #Grid {
                 display: grid;
@@ -148,12 +153,21 @@
 
         /* Section debut-two ( Event ) */
 
-            .child-img, .men-img, .women-img {
+        .debut-two {
+            box-shadow: #B7A263 20px 20px 20px 0px;
+            position: static;
+            z-index: 2;
+        }
+
+            .post_img {
                 display: flex;
                 height: 400px;
                 border-radius: 50px;
-                border: black 1px solid;
-                box-shadow: #B7A263 0px 1px 10px 5px;
+                border: #B7A263 2px solid;
+            }
+
+            .post_img:hover {
+                border: #000 2px solid;
             }
 
             .child, .men, .women, .info {
@@ -184,6 +198,11 @@
                 box-shadow: #B7A263 10px 10px 15px 5px;
             }
 
+            .card:hover, .post_img {
+                box-shadow: #000 10px 10px 15px 5px; 
+                background-color: #B7A263;
+            }
+
             .info {
                 grid-column-start: 2;
                 grid-row-start: 1;
@@ -193,7 +212,6 @@
     /* Footer */
 
         footer {
-            border: 1px solid;
             display: grid;
             grid-template-columns: 40% 70%;
             grid-template-rows: 95% 5%;
@@ -201,13 +219,19 @@
             align-items: center;
             padding: 10px;
             bottom: 0;
-            height: 450px;
+            background-color: #000;
+            position: static;
+        }
+
+        .none {
+            background-color: white;
+            border-radius: 100%;
         }
 
         .copy {
             grid-column-start: 1;
             grid-row-start: 2;
-
+            color: white;
         }
 
         .pied {
@@ -218,13 +242,14 @@
         .Foot-Title {
             display: flex;
             justify-content: center;
+            color: white;
         }
 
         .footer-logo {
             height: 300px;
             width: 300px;
             grid-column-start: 1;
-            grid-row-start: 1;
+            padding-bottom: 5px;
         }
 
         .form {
