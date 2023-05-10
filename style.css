@@ -112,7 +112,6 @@
                 justify-items: center;
                 width: 100%;
                 padding-bottom: 10px;
-
             }
 
             #Groupe {
@@ -165,13 +164,19 @@
                 padding-top: 20px;
             }
 
+            .all {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
             .card {
                 display: grid;
                 grid-template-columns: 60% 40%;
                 background-color: #000;
                 border-radius: 50px;
                 width: 80%;
-                align-content: center;
                 justify-items: center;
                 align-items: center;
                 padding-bottom: 20px;
@@ -190,19 +195,20 @@
                 grid-column-start: 2;
                 grid-row-start: 1;
                 grid-row-end: 3;
+                width: 100%;
             }
 
     /* Footer */
 
         footer {
             display: grid;
-            grid-template-columns: 40% 70%;
+            grid-template-columns: 40% 60%;
             grid-template-rows: 95% 5%;
             justify-items: center;
             align-items: center;
-            padding: 10px;
             bottom: 0;
             background-color: #000;
+            width: 100%;
         }
 
         .none {
@@ -214,11 +220,6 @@
             grid-column-start: 1;
             grid-row-start: 2;
             color: white;
-        }
-
-        .pied {
-            margin-left: 200px;
-            margin-right: 400px;
         }
 
         .Foot-Title {
@@ -239,6 +240,7 @@
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
+            margin-right: 20px;
         }
 
         input[type=text], textarea {
@@ -270,7 +272,15 @@
 
 /* Mobile S 320px */
 
-
+@media screen and (min-width:320px) {
+    #Texte {
+        margin-right: 30px;
+        font-size: 14px;
+    }  
+    #Groupe {
+        font-size: 18px;
+    }
+}
 
 /* Mobile M 375px */
 
