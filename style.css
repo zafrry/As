@@ -18,38 +18,76 @@
     /* Nav */
 
         .navbar {
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            justify-items: center;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             right: 0;
+            padding: 5px 0;
+            background-color: white;
             box-shadow: 0px 0px 10px black;
         }
 
-        
+        ul {
+            display: flex;
+            padding: 0px;
+            gap: 20rem;
+            padding-right: 15rem;
+        }
+
+        li {
+            list-style: none;
+        }
 
         .nav-logo {
             height: 50px;
+            padding-left: 3rem;
         }
 
-        .lien:hover {
+        .navbar .toggle_btn {
+            color: #B7A263;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+        }
+
+        .dropdown_menu {
+            display: none;
+            position: absolute;
+            right: 2rem;
+            top: 60px;
+            width: 300px;
+            height: 0;
+            background-color: grey;
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .dropdown_menu.open {
+            height: 123px;
+        }
+
+
+        .dropdown_menu li {
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li a {
+            height: 50px;
+        } /* A corriger */
+
+        a:hover {
             background-color: #B7A263;
             cursor: pointer;
-        }
-
-        .lien, .nav-box {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            background-color: rgb(255, 255, 255);
-            font-size: 20px;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
         }
 
     /* Main */
@@ -272,11 +310,27 @@
 
 /* Mobile */
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
-
-    .nav-box, .lien {
-        padding: 1px;
+@media screen and (max-width: 1340px) {
+    .navbar ul {
+        display: none;
     }
+    .navbar .toggle_btn {
+        display: block;
+        padding-right: 2rem;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 375px) {
+    .dropdown_menu {
+        right: 1rem;
+    } 
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
 
     .debut-one {
         padding-left: 10px;

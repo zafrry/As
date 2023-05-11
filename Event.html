@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Découvrez la première association sportive de la ville d'Etampes à se spécialiser dans la boxe thaï">
       <link rel="stylesheet" type="text/css" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="shortcut icon" href="./Image/Logo.png" type="image/x-icon"/>
       <title>Boxe Thaï</title>
  </head>
@@ -15,21 +16,35 @@
 
         <nav class="navbar">
 
-            <div class="nav-box">
-                <img class="nav-logo" src="./Image/Title.png" alt="Logo de la marque">
+            <img class="nav-logo" src="./Image/Title.png" alt="Logo de la marque">
+
+            <ul>
+                <li><a href="Home.html">Accueil</a></li>
+                <li><a href="Event.html">Evenement</a></li>
+                <li><a href="#">A venir</a></li> 
+            </ul>
+
+            <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" style="--fa-primary-color: #000000; --fa-secondary-color: #B7A263;"></i>
             </div>
 
-            <div class="lien">
-                <a href="Home.html">Accueil</a>
+            <div class="dropdown_menu">
+                <li><a href="Home.html">Accueil</a></li>
+                <li><a href="Event.html">Evenement</a></li>
+                <li><a href="#">A venir</a></li>
             </div>
-            
-            <div class="lien">
-                <a href="Event.html">Evenement</a>
-            </div>
-    
-            <div class="lien">A venir</div>
-
         </nav>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+            }
+        </script>
    
         <main>
 
